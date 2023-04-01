@@ -1,113 +1,174 @@
 /* Configs generales */
-*{
-    margin:10px;
+* {
+    margin: 10px;
     padding: 10px;
     box-sizing: border-box;
 }
 
 /* Contenedor padre */
-.padre{
+.padre {
     background: gray;
     display: flex;
     flex-flow: column nowrap;
 }
 
 /* Contenedores generales */
-    .header{
-        display: flex;
-        background: #000;
-        flex-flow: column nowrap;
-    }
-        .menu{
-            background: #2d4059;
-            display: flex;
-            flex-flow: row nowrap;
-            height: 100px;
-            align-items: center;
-        }
-            .logo{
-                background: #ea5455;
-                flex: 1 1 auto;
-                height: 30px;
-            }
-            .nav{
-                background: #ea5455;
-                flex: 5 1 auto;
-                height: 30px;
-            }
-            .social{
-                background: #ea5455;
-                flex: 1 1 auto;
-                height: 30px;
-            }
-        .texto-principal{
-            background: #f07b3f;
-        }
-            h1{
-                background: #ffd460;
-            }
-    .section{
-        background: #000;
-        display: flex;
-    }
-        .articulos{
-            background: #4e4e6a;
-            flex: 2 1 auto;
-            display: flex;
-            flex-flow: row wrap;
-        }
-            .article{
-                background: #1f6cb0;
-                flex: 1 1 40%;
-            }
-            .navegacion{
-                background: #70a3c4;
-                flex: 1 1 100%;
-            }
-        .aside{
-            background: #f73f52;
-            flex: 1 1 auto;
-        }
-            .publicidad{
-                background: #ffea85;
-            }
-    .footer{
-        background: #000;
-        display: flex;
-        /* Justify content va en el contenedor padre porque centra los contenedores hijo */
-        justify-content: center;
-    }
-        .pie{
-            background: #e6af2e;
-            width: 300px;
-        }
+.header {
+    display: flex;
+    background: #000;
+    flex-flow: column nowrap;
+}
+
+.menu {
+    background: #2d4059;
+    display: flex;
+    flex-flow: row nowrap;
+    height: 100px;
+    align-items: center;
+}
+
+.logo {
+    background: #ea5455;
+    flex: 1 1 auto;
+    height: 30px;
+}
+
+.nav {
+    background: #ea5455;
+    flex: 5 1 auto;
+    height: 30px;
+}
+
+.social {
+    background: #ea5455;
+    flex: 1 1 auto;
+    height: 30px;
+}
+
+.texto-principal {
+    background: #f07b3f;
+}
+
+.section {
+    background: #000;
+    display: flex;
+}
+
+.articulos {
+    background: #4e4e6a;
+    flex: 2 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.article {
+    background: #1f6cb0;
+    flex: 1 1 40%;
+}
+
+.navegacion {
+    background: #70a3c4;
+    flex: 1 1 100%;
+}
+
+.aside {
+    background: #f73f52;
+    flex: 1 1 auto;
+}
+
+.publicidad {
+    background: #ffea85;
+}
+
+.footer {
+    background: #000;
+    display: flex;
+    /* Justify content va en el contenedor padre porque centra los contenedores hijo */
+    justify-content: center;
+}
+
+.pie {
+    background: #e6af2e;
+    width: 300px;
+}
 
 /* https://linktr.ee/kamuselreal*/
 
 
 /* Diseño responsivo */
 @media all and (max-width: 800px) {
-    .section{
+    .section {
         flex-direction: column;
     }
-    .menu{
+
+    .menu {
         flex-direction: column;
         height: auto;
     }
-    .aside{
+
+    .aside {
         display: flex;
         justify-content: center;
     }
 }
 
-@media all and (max-width: 600px){
-    .articulos{
+@media all and (max-width: 600px) {
+    .articulos {
         flex-direction: column;
     }
 }
 
-@media all and (max-width: 400px){
-    .aside{
+@media all and (max-width: 400px) {
+    .aside {
         flex-direction: column;
     }
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: "Press Start 2P", Arial, sans-serif;
+    font-size: 16px;
+}
+
+header {
+    text-align: center;
+}
+
+h1 {
+    font-size: 48px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background: #e6af2e;
+    color: #000;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+section {
+    text-align: center;
+    margin: 0 20px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.online {
+    color: #0f0;
+}
+
+.offline {
+    color: #f00;
 }
